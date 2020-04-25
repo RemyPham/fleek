@@ -1,16 +1,28 @@
-import React, {useState} from 'react';
+import React, { Component } from 'react';
 import '../styles/nav.css'
 
-export default function Nav() {
-    const [mode, setMode] = useState("light");
+class Nav extends Component {
 
-    return (
-        <div className="nav">
-            <p className="app-name">fleek</p>
-            
-            <div className="button">
-               {mode === "light" ? <button className="button-mode dark">Dark mode 🌙</button> : <button className="button-mode light">Light mode ☀️</button>}
+    handleClick = () => {
+        this.props.clbk()
+    }
+
+    render() {
+        return (
+            <div className="nav">
+                <p className="app-name">fleek</p>
+                
+                <div className="button">
+                    <button
+                    className={this.props.mode ? "button-mode dark" : "button-mode light"}
+                    onClick={this.handleClick}
+                    >
+                        {this.props.mode ? "Dark mode 🌙" : "Light mode ☀️"}
+                    </button>
+                </div>
             </div>
-        </div>
-    )
+        );
+    }
 }
+
+export default Nav;

@@ -21,11 +21,11 @@
     cursor: pointer
 }
 .dark {
-    background-color: #231d5a;
+    background-color: #15103b;
     color: rgb(253, 253, 253);
 }
 .light {
-    background-color: #cfcfcf;
+    background-color: #ffffff;
     color: rgb(23, 19, 59)
 }
 .button-mode.dark:hover {
@@ -42,4 +42,22 @@
     0%{background-position:0% 49%}
     50%{background-position:100% 52%}
     100%{background-position:0% 49%}
+}
+
+
+@media only screen and (max-width: 600px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .app-name {
+        transform: translateX(0);
+        margin: 0;
+    }
+
+    .button {
+        margin-top: 1%;
+    }
 }
