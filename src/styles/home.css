@@ -1,0 +1,15 @@
+
+
+.main-content {
+    display: flex;
+    margin-top: 20px;
+}
+
+.side {
+    width: 20vw;
+}
+
+.list {
+    font-size: 90%;
+    margin-top: 15px;
+}

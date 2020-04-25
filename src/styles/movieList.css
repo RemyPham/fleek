@@ -1,0 +1,10 @@
+.selected {
+    font-weight: bold;
+}
+
+li {
+    margin: 3px 0 3px 3px;
+}
+li:hover {
+    cursor: pointer;
+}

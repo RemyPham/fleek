@@ -1,0 +1,36 @@
+.movie-infos {
+    margin: 3%;
+    width: 80vw;
+}
+
+.infos-first {
+    display: flex;
+}
+
+.poster-container {
+    width: 15%;
+}
+.poster {
+    width: 100%;
+    height: auto;
+}
+
+.infos-container>p {
+    margin: 0 0 2% 2% ;
+    width: 100%;
+}
+
+.title {
+    font-weight: bold;
+}
+.og {
+    font-size: 14px;
+    font-style: italic;
+}
+
+.infos-second {
+    margin-top: 2%;
+}
+.infos-second>p {
+    margin-top: 1%;
+}

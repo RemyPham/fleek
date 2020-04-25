@@ -1,0 +1,45 @@
+@import	url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Extended+Text&display=swap');
+
+.nav {
+    display: flex;
+    align-items: center;
+    padding: 2% 1%;
+}
+
+.app-name {
+    font-family: 'Libre Barcode 39 Extended Text', cursive;
+    font-size: 50px;
+    margin: 0 auto;
+    transform: translateX(40px);
+}
+
+.button-mode {
+    padding: 10px;
+    border-radius: 15% / 50% ;
+}
+.button-mode:hover {
+    cursor: pointer
+}
+.dark {
+    background-color: #231d5a;
+    color: rgb(253, 253, 253);
+}
+.light {
+    background-color: #cfcfcf;
+    color: rgb(23, 19, 59)
+}
+.button-mode.dark:hover {
+    background: linear-gradient(250deg, #231d5a, #4052a1, #231d5a);
+    background-size: 600% 600%;
+    animation: gradient 3s ease infinite;
+}
+.button-mode.light:hover {
+    background: linear-gradient(250deg, #cfcfcf, #ffffff, #cfcfcf);
+    background-size: 600% 600%;
+    animation: gradient 3s ease infinite;
+}
+@keyframes gradient {
+    0%{background-position:0% 49%}
+    50%{background-position:100% 52%}
+    100%{background-position:0% 49%}
+}
